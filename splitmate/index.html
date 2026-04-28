@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SplitMate</title>
+    <meta name="theme-color" content="#047857">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/logo.svg">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="assets/logo.svg" alt="SplitMate Logo" class="splash-logo">
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+        <header class="app-header">
+            <h2>SplitMate</h2>
+            <div class="profile-icon">SM</div>
+        </header>
+
+        <main class="dashboard-content">
+            <h1>Welcome to SplitMate</h1>
+            <p>Your simple and easy way to split bills.</p>
+            <button class="btn-primary" id="sign-in-btn">Sign In</button>
+        </main>
+    </div>
+
+    <!-- Need to load app logic immediately for speedy redirect -->
+    <script src="js/app.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
